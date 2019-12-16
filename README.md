@@ -1,6 +1,6 @@
 # THE3-tester
 
-#Instructions:
+# Instructions:
 
 1-Download or clone the repository.
 
@@ -10,4 +10,4 @@
 
 4-Good luck :)
 
-#Note:# My current python version is 2.7.16
+Note: My current python version is 2.7.16
