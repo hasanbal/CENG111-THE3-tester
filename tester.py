@@ -1,3 +1,5 @@
+import time
+t1 = time.time()
 import os
 import sys
 
@@ -41,3 +43,5 @@ for mapNo in range(10):
 
 
 print "You failed " + str(wrong) + " times on 1000 testcases."
+t2 = time.time()
+print "Execute time is:", t2-t1
