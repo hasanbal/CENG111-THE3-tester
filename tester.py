@@ -33,8 +33,7 @@ for mapNo in range(10):
 			
 			f = open(outputDir,"r")
 			correctOut = f.read()
-			# I added
-			#print output
+
 			if areSame(output,correctOut) == 0:
 				print "You failed at "+str(mapNo+1) + ".th map with " + str(ruleNo+1)+".th rule at "+str(genNo)+".th generation\n"
 				print "Correct Output:\n"+correctOut
