@@ -23,7 +23,7 @@ for mapNo in range(10):
 			ruleDir = "testcases/rules/rules"+str(ruleNo+1)+".txt"
 
 
-			cmd = "python the3.py " + mapDir + " " + ruleDir + " " + str(genNo); 
+			cmd = "python2 the3.py " + mapDir + " " + ruleDir + " " + str(genNo); 
 			stream = os.popen(cmd)
 			output = stream.read()
 
