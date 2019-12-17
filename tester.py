@@ -1,11 +1,13 @@
-import os
-import sys
 import time
 t1 = time.time()
+import os
+import sys
 
 wrong=0
 
 def areSame(test, correct):
+	if test=="":
+		return 0
 	if test[-1] == '\n':
 		test = test[:-1]
 
@@ -23,7 +25,7 @@ for mapNo in range(10):
 			ruleDir = "testcases/rules/rules"+str(ruleNo+1)+".txt"
 
 
-			cmd = "python the3.py " + mapDir + " " + ruleDir + " " + str(genNo); 
+			cmd = "python2 the3.py " + mapDir + " " + ruleDir + " " + str(genNo); 
 			stream = os.popen(cmd)
 			output = stream.read()
 
@@ -31,6 +33,8 @@ for mapNo in range(10):
 			
 			f = open(outputDir,"r")
 			correctOut = f.read()
+			# I added
+			#print output
 			if areSame(output,correctOut) == 0:
 				print "You failed at "+str(mapNo+1) + ".th map with " + str(ruleNo+1)+".th rule at "+str(genNo)+".th generation\n"
 				print "Correct Output:\n"+correctOut
@@ -41,4 +45,3 @@ for mapNo in range(10):
 print "You failed " + str(wrong) + " times on 1000 testcases."
 t2 = time.time()
 print "Execute time is:", t2-t1
-
