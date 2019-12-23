@@ -8,6 +8,8 @@
 
 3-Run the tester by "python tester.py" command.
 
-4-Good luck :)
+4-If you see your output as empty, Change "python2" in line 28 with "python".
+
+5-Good luck :)
 
 Note: My current python version is 2.7.16
