@@ -1,6 +1,8 @@
 # THE3-tester
 
-# Instructions:
+This is a tester for our "INTRODUCTION TO COMPUTER ENG. CONCEPTS" Take Home Exam.
+
+## Instructions:
 
 1-Download or clone the repository.
 
